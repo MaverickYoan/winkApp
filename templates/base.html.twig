@@ -1,17 +1,195 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<!DOCTYPE HTML>
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>{% block title %}Food Coner{% endblock %}</title>
+
+    {% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('bundles/resto/css/mystyle.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/bmatznerfontawesome/css/font-awesome.min.css') }}" />
+
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+
+    {% endblock %}
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <!-- Static navbar -->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+                <a class="navbar-brand" href="#"><img src="{{ asset('bundles/resto/images/brand.png') }}" class="img-responsive brand"></a>
+
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav">
+
+                    <li class="active"><a href="#">Accueil</a></li>
+
+                    <li><a href="#">Menu</a></li>
+
+                    <li><a href="#">Reservation</a></li>
+
+                    <li><a href="#">Commande</a></li>
+
+                    <li><a href="#">A propos</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!--/.nav-collapse -->
+
+            <!--/.container-fluid -->
+
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+
+    </div>
+
+    <div class="container block">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 pull-left ">
+
+                {% block body %}
+
+                <p class=" text-justify presentation lead">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at tortor a urna ultricies sagittis ut sed dui. Vivamus non mollis libero, a tincidunt felis. Etiam augue libero, congue a velit nec, feugiat aliquam turpis. Integer id aliquet ante. Curabitur vulputate lectus vel sem vulputate convallis dapibus quis justo. Nulla sit amet tortor ac ante iaculis ultricies nec in ex. Fusce sit amet nisi neque. Aenean rutrum efficitur efficitur. In hac habitasse platea dictumst.
+
+                </p>
+
+                {% endblock %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer" id="footer">
+
+            <div class="container">
+
+                <div class="row">
+
+​
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+​
+
+                        <i class="fa fa-map-marker fa-2x info" aria-hidden="true"></i><br/> 13 RUE X TUNIS
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+
+                        <i class="fa fa-envelope fa-2x info" aria-hidden="true"></i><br/>foodcorner@gmail.com
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+
+                        <i class="fa fa-phone fa-2x info" aria-hidden="true"></i><br/>12356712
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                        <ul class="social">
+
+                            <li>
+
+                                <a href="#"> <i class="fa fa-facebook">  </i> </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#"> <i class="fa fa-twitter">   </i> </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#"> <i class="fa fa-google-plus">   </i> </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#"> <i class="fa fa-pinterest">   </i> </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!--/.row-->
+
+            </div>
+
+            <!--/.container-->
+
+        </div>
+
+        <!--/.footer-->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p class="text-center"> Copyright @MDEV 2017. All right reserved. </p>
+
+            </div>
+
+        </div>
+
+        <!--/.footer-bottom-->
+
+    </footer>
+
+​</body>
+
 </html>

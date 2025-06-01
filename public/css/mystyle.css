@@ -1,0 +1,270 @@
+.full {
+
+    width: 100%;
+
+}
+
+.gap {
+
+    height: 30px;
+
+    width: 100%;
+
+    clear: both;
+
+    display: block;
+}
+
+.footer {
+
+    height: auto;
+
+    padding-bottom: 30px;
+
+    position: relative;
+
+    width: 100%;
+
+    border-bottom: 1px solid #CCCCCC;
+
+    border-top: 1px solid #DDDDDD;
+
+}
+
+.footer p {
+
+    margin: 0;
+
+}
+
+.footer img {
+
+    max-width: 100%;
+
+}
+
+.footer ul {
+
+    font-size: 13px;
+
+    list-style-type: none;
+
+    margin-left: 0;
+
+    padding-left: 0;
+
+    margin-top: 15px;
+
+    color: #7F8C8D;
+
+}
+
+.footer ul li a {
+
+    padding: 0 0 5px 0;
+
+    display: block;
+
+}
+
+.footer a {
+
+    color: #F76B00;
+
+}
+
+.supportLi h4 {
+
+    font-size: 20px;
+
+    font-weight: lighter;
+
+    line-height: normal;
+
+    margin-bottom: 0 !important;
+
+    padding-bottom: 0;
+
+}
+
+.bg-gray {
+
+    background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+
+    box-shadow: 0 1px 0 #B4B3B3;
+
+}
+
+.social li {
+
+    background: none repeat scroll 0 0 #F76B00;
+
+    border: 2px solid #ED9C40;
+
+    -webkit-border-radius: 50%;
+
+    -moz-border-radius: 50%;
+
+    -o-border-radius: 50%;
+
+    -ms-border-radius: 50%;
+
+    border-radius: 50%;
+
+    float: left;
+
+    height: 36px;
+
+    line-height: 36px;
+
+    margin: 0 8px 0 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    width: 36px;
+
+    transition: all 0.5s ease 0s;
+
+    -moz-transition: all 0.5s ease 0s;
+
+    -webkit-transition: all 0.5s ease 0s;
+
+    -ms-transition: all 0.5s ease 0s;
+
+    -o-transition: all 0.5s ease 0s;
+
+}
+
+.social li:hover {
+
+    transform: scale(1.15) rotate(360deg);
+
+    -webkit-transform: scale(1.1) rotate(360deg);
+
+    -moz-transform: scale(1.1) rotate(360deg);
+
+    -ms-transform: scale(1.1) rotate(360deg);
+
+    -o-transform: scale(1.1) rotate(360deg);
+
+}
+
+.social li a {
+
+    color: #EDEFF1;
+
+}
+
+.social li:hover {
+
+    border: 2px solid #C65600;
+
+    background: #C65000;
+
+}
+
+.social li a i {
+
+    font-size: 16px;
+
+    margin: 0 0 0 5px;
+
+    color: #EDEFF1 !important;
+
+}
+
+.footer-bottom {
+
+    background: #F0AF7E;
+
+    border-top: 1px solid #DDDDDD;
+
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+
+}
+
+.info {
+
+    color: #F76B00;
+
+    margin-top: 15px;
+
+}
+
+.info:hover {
+
+    color: #C65600;
+
+}
+
+.navbar-default {
+
+    background-color: #F76B00;
+
+    border-color: #F69526;
+
+}
+
+​ .navbar-default .navbar-nav>li>a {
+
+    color: #ffffff;
+
+}
+
+.navbar-default .navbar-nav>.active>a,
+
+.navbar-default .navbar-nav>.active>a:hover,
+
+.navbar-default .navbar-nav>.active>a:focus {
+
+    color: #ffffff;
+
+    background-color: #C65600;
+
+}
+
+.brand {
+
+    margin-top: -5px;
+
+}
+
+.block {
+
+    background-image: url('../../resto/images/restaurant.jpg');
+
+    background-repeat: no-repeat;
+
+    height: 640px;
+
+    background-position: center;
+
+}
+
+.presentation {
+
+    color: #ffffff;
+
+    margin-top: 120px;
+
+}
+
+@media (max-width: 767px) {
+
+    .block {
+
+        background-size: cover;
+
+    }
+
+    .presentation {
+
+        margin-top: 80px;
+
+    }
+
+}
